@@ -1,3 +1,4 @@
+// Ejercicio 2 - Notación decimal y factorial
 function factorial(n) {
     let total = 1;
     for (let i = 1; i <= n; i++) {
