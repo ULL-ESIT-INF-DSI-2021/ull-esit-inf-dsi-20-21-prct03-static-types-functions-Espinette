@@ -5,7 +5,7 @@ function isLeapYear(year: number) {
   if (year % 4 == 0) {
     if (year % 100 != 0) {
       isbisiesto = true;
-    } else if ((year % 100 != 0) && (year % 400 == 0)) {
+    } else if ((year % 100 == 0) && (year % 400 == 0)) {
       isbisiesto = true;
     } else {
       isbisiesto = false;
@@ -15,5 +15,5 @@ function isLeapYear(year: number) {
 }
 
 const year: number = 1900;
-const myResult: boolean = isLeapYear(year);
-console.log(`¿El año ${year} es bisiesto? = ${myResult}`);
+const resultado1: boolean = isLeapYear(year);
+console.log(`¿El año ${year} es bisiesto? = ${resultado1}`);
