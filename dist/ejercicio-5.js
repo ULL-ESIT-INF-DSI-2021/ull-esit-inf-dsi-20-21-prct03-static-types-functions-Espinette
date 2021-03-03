@@ -3,13 +3,7 @@ function chuckNorris(cadena) {
     if (cadena == ``) {
         return `Broken!`;
     }
-    let cadenanew;
-    cadenanew = cadena.split(" ");
-    cadenanew = cadenanew.sort();
-    cadena = cadenanew.toString();
-    cadena = cadena.replace(/,/gi, " ");
-    cadena = cadena.replace(/[ae]/gi, "");
-    return cadena;
+    return cadena.split(" ").sort().join(" ").replace(/[ae]/gi, "");
 }
 const OnePunchA = ``;
 const SolOnePunchA = chuckNorris(OnePunchA);

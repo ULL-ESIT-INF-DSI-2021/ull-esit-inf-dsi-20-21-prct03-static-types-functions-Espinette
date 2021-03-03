@@ -4,13 +4,7 @@ function chuckNorris(cadena: string) {
   if (cadena == ``) {
     return `Broken!`;
   }
-  let cadenanew: string[];
-  cadenanew = cadena.split(" ");
-  cadenanew = cadenanew.sort();
-  cadena = cadenanew.toString();
-  cadena = cadena.replace(/,/gi, " ");
-  cadena = cadena.replace(/[ae]/gi, "");
-  return cadena;
+  return cadena.split(" ").sort().join(" ").replace(/[ae]/gi, "");
 }
 
 const OnePunchA: string = ``;

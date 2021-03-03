@@ -1,16 +1,37 @@
+// Ejercicio 6 - Conversor ISBN
+
 function isValidISBN(cadena: string) {
-  
+  let mult: number = 10;
+  let sum: number = 0;
+  let aux: string = ``;
+  for (let i: number = 0; i < cadena.length; i++) {
+    if ( cadena.charAt(i) == `-`) {
+      i = i + 1;
+    }
+    aux = cadena.charAt(i);
+    if ( cadena.charAt(i) == `X`) {
+      aux = cadena.charAt(i).replace(`X`, `10`);
+    }
+    sum = sum + (parseInt(aux, 10) * mult);
+    mult = mult - 1;
+  }
+  if (sum % 11 == 0) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
 
-const isbnwithX: string = ``;
-const solisbnwithX: string = chuckNorris(isbnwithX);
-console.log(`ISBN con X, se espera que sea válido(true): ${solisbnwithX}`);
 
-const isbn: string = ``;
-const solisbn: string = chuckNorris(isbn);
-console.log(`ISBN, se espera que sea válido(true): ${solisbn}`);
+const isbnwithX: string = `359821507X`;
+const solisbnwithX: boolean = isValidISBN(isbnwithX);
+console.log(`ISBN 359821507X valido?: ${solisbnwithX}`);
 
-const isbnerror: string = ``;
-const solisbnerror: string = chuckNorris(isbnerror);
-console.log(`ISBN, se espera que no sea válido(false): ${solisbnerror}`);
+const isbn: string = `3-598-21508-8`;
+const solisbn: boolean = isValidISBN(isbn);
+console.log(`ISBN 3-598-21508-8 valido?: ${solisbn}`);
+
+const isbnerror: string = `3-598-22508-8`;
+const solisbnerror: boolean = isValidISBN(isbnerror);
+console.log(`ISBN 3-598-22508-8 valido?: ${solisbnerror}`); 

@@ -15,6 +15,9 @@ function isValid(cadena) {
         }
         for (let j = 1; j <= aux; j++) {
             aux2 = cadena.charAt(i + j);
+            if (aux2 == '') {
+                return false;
+            }
             aux3 = parseInt(aux2, 10);
             if (isNaN(aux3) == false) {
                 return false;
