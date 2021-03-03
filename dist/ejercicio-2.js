@@ -9,7 +9,6 @@ function factorial(n) {
 function decimalToFactorial(numero) {
     let n = 0;
     let aux = 0;
-    let aux2 = 0;
     let contador = 0;
     let final = '';
     let cadena;

@@ -11,7 +11,6 @@ function factorial(n: number) {
 function decimalToFactorial(numero: number) {
   let n: number = 0;
   let aux: number = 0;
-  let aux2: number = 0;
   let contador: number = 0;
   let final: string = '';
   let cadena: string;
