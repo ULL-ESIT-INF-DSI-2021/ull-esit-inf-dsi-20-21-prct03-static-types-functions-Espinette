@@ -1,0 +1,11 @@
+declare function chuckNorris(cadena: string): string;
+declare const OnePunchA: string;
+declare const SolOnePunchA: string;
+declare const OnePunchB: string;
+declare const SolOnePunchB: string;
+declare const OnePunchC: string;
+declare const SolOnePunchC: string;
+declare const OnePunchD: string;
+declare const SolOnePunchD: string;
+declare const OnePunchE: string;
+declare const SolOnePunchE: string;
