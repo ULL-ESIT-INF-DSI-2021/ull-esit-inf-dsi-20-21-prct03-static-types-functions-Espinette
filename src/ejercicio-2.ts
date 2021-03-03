@@ -20,18 +20,10 @@ function decimalToFactorial(numero: number) {
   }
   for (let i: number = n - 1; i >= 0; i--) {
     contador = 0;
-    aux = 0;
-    while (aux < numero) {
-      aux += factorial(i);
-      aux2 = aux;
-      contador++; // contador para ver cuantas veces se usa ese factorial
-      if (aux > numero) { // if porque se hace una iteracion extra
-        aux2 = aux - factorial(i); // obtener valor del aux
-        contador--;
-      }
-    }
-    numero = numero - aux2; // decremento del numero actual
-    cadena = (contador).toFixed(); // pasar valor del contador a cadena
+    contador = numero / factorial(i);
+    aux = Math.trunc(contador);
+    numero = numero % factorial(i); // decremento del numero actual
+    cadena = (aux).toFixed(); // pasar valor del contador a cadena
     final = final + cadena; // ir añadiendo la cadena a la notacion final
   }
   return final;
