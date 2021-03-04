@@ -2,9 +2,9 @@
   "name": "ull-esit-inf-dsi-20-21-prct03-static-types-functions-Espinette",
   "version": "1.0.0",
   "description": "",
-  "main": "ejercicio-7.js", 
+  "main": "ejercicio-9.js", 
   "scripts": {
-    "start": "tsc-watch --onSuccess \"node dist/ejercicio-7.js\""
+    "start": "tsc-watch --onSuccess \"node dist/ejercicio-9.js\""
   },
   "repository": {
     "type": "git",
