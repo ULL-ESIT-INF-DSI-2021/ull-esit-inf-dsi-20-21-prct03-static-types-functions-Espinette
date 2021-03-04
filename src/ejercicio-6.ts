@@ -4,10 +4,8 @@ function isValidISBN(cadena: string) {
   let mult: number = 10;
   let sum: number = 0;
   let aux: string = ``;
+  cadena = cadena.replace(/[-]/g, "");
   for (let i: number = 0; i < cadena.length; i++) {
-    if ( cadena.charAt(i) == `-`) {
-      i = i + 1;
-    }
     aux = cadena.charAt(i);
     if ( cadena.charAt(i) == `X`) {
       aux = cadena.charAt(i).replace(`X`, `10`);
@@ -22,16 +20,14 @@ function isValidISBN(cadena: string) {
   }
 }
 
-
-
 const isbnwithX: string = `359821507X`;
 const solisbnwithX: boolean = isValidISBN(isbnwithX);
-console.log(`ISBN 359821507X valido?: ${solisbnwithX}`);
+console.log(`ISBN ${isbnwithX} valido?: ${solisbnwithX}`);
 
 const isbn: string = `3-598-21508-8`;
 const solisbn: boolean = isValidISBN(isbn);
-console.log(`ISBN 3-598-21508-8 valido?: ${solisbn}`);
+console.log(`ISBN ${isbn} valido?: ${solisbn}`);
 
 const isbnerror: string = `3-598-22508-8`;
 const solisbnerror: boolean = isValidISBN(isbnerror);
-console.log(`ISBN 3-598-22508-8 valido?: ${solisbnerror}`); 
+console.log(`ISBN ${isbnerror} valido?: ${solisbnerror}`);

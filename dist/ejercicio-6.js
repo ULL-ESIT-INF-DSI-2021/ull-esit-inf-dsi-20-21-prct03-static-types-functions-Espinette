@@ -1,11 +1,10 @@
+// Ejercicio 6 - Conversor ISBN
 function isValidISBN(cadena) {
     let mult = 10;
     let sum = 0;
     let aux = ``;
+    cadena = cadena.replace(/[-]/g, "");
     for (let i = 0; i < cadena.length; i++) {
-        if (cadena.charAt(i) == `-`) {
-            i = i + 1;
-        }
         aux = cadena.charAt(i);
         if (cadena.charAt(i) == `X`) {
             aux = cadena.charAt(i).replace(`X`, `10`);
@@ -22,10 +21,10 @@ function isValidISBN(cadena) {
 }
 const isbnwithX = `359821507X`;
 const solisbnwithX = isValidISBN(isbnwithX);
-console.log(`ISBN 359821507X valido?: ${solisbnwithX}`);
+console.log(`ISBN ${isbnwithX} valido?: ${solisbnwithX}`);
 const isbn = `3-598-21508-8`;
 const solisbn = isValidISBN(isbn);
-console.log(`ISBN 3-598-21508-8 valido?: ${solisbn}`);
+console.log(`ISBN ${isbn} valido?: ${solisbn}`);
 const isbnerror = `3-598-22508-8`;
 const solisbnerror = isValidISBN(isbnerror);
-console.log(`ISBN 3-598-22508-8 valido?: ${solisbnerror}`);
+console.log(`ISBN ${isbnerror} valido?: ${solisbnerror}`);
