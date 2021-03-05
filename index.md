@@ -10,7 +10,8 @@ Esta práctica tiene como función principal empezar a realizar ejercicios de pr
 ### ELABORACIÓN DE LOS EJERCICIOS
 
 #### Ejercicio-1. Años bisiestos
-
+*
+*Código resuelto* = [Solución](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct03-static-types-functions-Espinette/blob/master/src/ejercicio-1.ts)
 #### Ejercicio-2. Notación decimal y factorial
 
 #### Ejercicio-3. Validador de mensajes
