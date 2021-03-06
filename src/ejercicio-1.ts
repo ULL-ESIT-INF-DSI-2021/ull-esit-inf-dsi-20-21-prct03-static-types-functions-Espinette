@@ -1,7 +1,7 @@
 // Año bisiestos
 
-let isbisiesto: boolean;
 function isLeapYear(year: number) {
+  let isbisiesto: boolean;
   if (year % 4 == 0) {
     if (year % 100 != 0) {
       isbisiesto = true;
