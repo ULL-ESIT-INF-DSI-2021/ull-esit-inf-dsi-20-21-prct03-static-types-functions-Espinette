@@ -22,6 +22,8 @@ Crear una funcion que devuelva true o false en el caso de que sea o no bisiesto 
   - Al menos que el año también sea divisible por 400.
  
  ***Captura y explicación de la función resuelta***
+ 
+ ![Ejercicio1](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct03-static-types-functions-Espinette/blob/gh-pages/Imagenes/Ej1.PNG)
 
 #### Ejercicio-2. Notación decimal y factorial
 
