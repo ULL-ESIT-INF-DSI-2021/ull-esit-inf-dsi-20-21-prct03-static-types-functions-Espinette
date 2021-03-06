@@ -21,7 +21,7 @@ Crear una funcion `isLeapYear` que devuelva true o false en el caso de que sea o
   - Excepto cada año que es divisible por 100.
   - Al menos que el año también sea divisible por 400.
  
- ***Captura y explicación de la función resuelta***
+***Captura y explicación de la función resuelta***
  
  ![Ejercicio1](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct03-static-types-functions-Espinette/blob/gh-pages/Imagenes/Ej1.PNG)
  
@@ -37,7 +37,9 @@ Crear dos funciones, `decimalToFactorial` y `factorialToDecimal`. La primera rec
 
 El número 463 codificado en notación factorial sería 341010 ya que:
   - 463 = 3 x 5! + 4 x 4! + 1 x 3! + 0 x 2! + 1 x 1! + 0 x 0!
-  
+
+***Captura y explicación de la función resuelta***
+
   
 #### Ejercicio-3. Validador de mensajes
 
@@ -45,11 +47,15 @@ El número 463 codificado en notación factorial sería 341010 ya que:
 
 ***Resumen enunciado*** 
 
+***Captura y explicación de la función resuelta***
+
 #### Ejercicio-4. Conversor de estilo
 
 *Código resuelto* = [Solución](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct03-static-types-functions-Espinette/blob/master/src/ejercicio-4.ts)
 
 ***Resumen enunciado*** 
+
+***Captura y explicación de la función resuelta***
 
 #### Ejercicio-5. Un solo golpe
 
@@ -57,11 +63,15 @@ El número 463 codificado en notación factorial sería 341010 ya que:
 
 ***Resumen enunciado*** 
 
+***Captura y explicación de la función resuelta***
+
 #### Ejercicio-6. Conversor ISBN
 
 *Código resuelto* = [Solución](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct03-static-types-functions-Espinette/blob/master/src/ejercicio-6.ts)
 
 ***Resumen enunciado*** 
+
+***Captura y explicación de la función resuelta***
 
 #### Ejercicio-7. El siguiente número
 
@@ -69,11 +79,15 @@ El número 463 codificado en notación factorial sería 341010 ya que:
 
 ***Resumen enunciado*** 
 
+***Captura y explicación de la función resuelta***
+
 #### Ejercicio-8. Contando IPs
 
 *Código resuelto* = [Solución](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct03-static-types-functions-Espinette/blob/master/src/ejercicio-8.ts)
 
 ***Resumen enunciado*** 
+
+***Captura y explicación de la función resuelta***
 
 #### Ejercicio-9. Entrenador Pokemon
 
@@ -81,11 +95,15 @@ El número 463 codificado en notación factorial sería 341010 ya que:
 
 ***Resumen enunciado*** 
 
+***Captura y explicación de la función resuelta***
+
 #### Ejercicio-10. Validador de nombre usuario
 
 *Código resuelto* = [Solución](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct03-static-types-functions-Espinette/blob/master/src/ejercicio-10.ts)
 
 ***Resumen enunciado*** 
+
+***Captura y explicación de la función resuelta***
 
 ## Welcome to GitHub Pages
 
