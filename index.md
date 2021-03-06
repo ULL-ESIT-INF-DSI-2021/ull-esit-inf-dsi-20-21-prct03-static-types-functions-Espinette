@@ -40,6 +40,8 @@ El número 463 codificado en notación factorial sería 341010 ya que:
 
 ***Captura y explicación de la función resuelta***
 
+ ![Ejercicio2Funcion](Imagenes/Ejercicio2.JPG) 
+
 #### Ejercicio-3. Validador de mensajes
 
 *Código resuelto* = [Solución](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct03-static-types-functions-Espinette/blob/master/src/ejercicio-3.ts)
@@ -51,6 +53,8 @@ Crear una funcion isValid que recibira una cadena formada por numeors y letras y
   - `3hey5hello2hi` se debería dividir en `3, hey, 5, hello, 2, hi`.
  
 ***Captura y explicación de la función resuelta***
+
+ ![Ejercicio3Funcion](Imagenes/Ejercicio3.JPG) 
 
 #### Ejercicio-4. Conversor de estilo
 
@@ -64,6 +68,8 @@ Desarrollar dos funciones `fromSnakeToCamelCase` y `fromCamelToSnakeCase` cuyo o
   - *Camel case* = `sampleString` y `theStealthWarrior`
  
 ***Captura y explicación de la función resuelta***
+
+ ![Ejercicio4Funcion](Imagenes/Ejercicio4.JPG) 
 
 #### Ejercicio-5. Un solo golpe
 
@@ -80,6 +86,8 @@ Crear una función que combine 4 métodos en una línea. Esta recibira una caden
   - onePunch(‘’) =>`Broken!`
   
 ***Captura y explicación de la función resuelta***
+
+ ![Ejercicio5Funcion](Imagenes/Ejercicio5.JPG) 
 
 #### Ejercicio-6. Conversor ISBN
 
@@ -98,6 +106,8 @@ La funcion retornará true o false en funcion de si es válido o no. Dos ejemplo
   
 ***Captura y explicación de la función resuelta***
 
+ ![Ejercicio6Funcion](Imagenes/Ejercicio6.JPG) 
+
 #### Ejercicio-7. El siguiente número
 
 *Código resuelto* = [Solución](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct03-static-types-functions-Espinette/blob/master/src/ejercicio-7.ts)
@@ -115,6 +125,8 @@ Crear una funcion que reciba un número entero y deberá devolver el siguiente n
   
 ***Captura y explicación de la función resuelta***
 
+ ![Ejercicio7Funcion](Imagenes/Ejercicio7.JPG) 
+
 #### Ejercicio-8. Contando IPs
 
 *Código resuelto* = [Solución](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct03-static-types-functions-Espinette/blob/master/src/ejercicio-8.ts)
@@ -128,6 +140,8 @@ Crear una función que reciba como parámetro una cadena de texto que representa
   - `ipsInRange(“20.0.0.10”, “20.0.1.0”) == 246`
 
 ***Captura y explicación de la función resuelta***
+
+ ![Ejercicio8Funcion](Imagenes/Ejercicio8.JPG) 
 
 #### Ejercicio-9. Entrenador Pokemon
 
@@ -152,6 +166,8 @@ Aquellos que son del mismo tipo tendrán efectividad 0.5
 
 ***Captura y explicación de la función resuelta***
 
+ ![Ejercicio9Funcion](Imagenes/Ejercicio9.JPG) 
+
 #### Ejercicio-10. Validador de nombre usuario
 
 *Código resuelto* = [Solución](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct03-static-types-functions-Espinette/blob/master/src/ejercicio-10.ts)
@@ -167,3 +183,4 @@ Crear una función `isValidUsername` que deberá comprobar la validez de un nomb
 
 ***Captura y explicación de la función resuelta***
 
+ ![Ejercicio10Funcion](Imagenes/Ejercicio10.JPG) 
