@@ -54,7 +54,7 @@ En la función `decimalToFactorial` se le pasa un número entero para factorizar
 En la función `factorialToDecimal` se le pasa una cadena de texto en notacaión factorial para obtener el número que pertenece. Lo que haremos paso a paso será lo siguiente:
 
   1. Inicializamos un valor aux al (tamaño de la cadena -1) ya que será la base máxima del decimal a obtener
-  2. Bucle for desde la primera posición de la cadena hasta la última posición de este. En el que obtenemos el dígito a analizar, lo pasamos de string a number a traves de la función `parseInt` luego obtenemos el resultado del número por el factorial de aux, y lo sumamos al valor final, y decrementamos el valor de aux.
+  2. Bucle for desde la primera posición de la cadena hasta la última posición de este. En el que obtenemos el dígito a analizar, lo pasamos de string a number a traves de la **función `parseInt`** luego obtenemos el resultado del número por el factorial de aux, y lo sumamos al valor final, y decrementamos el valor de aux.
   3. Return del resultado final
 
 
@@ -89,6 +89,10 @@ Desarrollar dos funciones `fromSnakeToCamelCase` y `fromCamelToSnakeCase` cuyo o
 
  ![Ejercicio4Funcion](Imagenes/Ejercicio4.JPG) 
 
+En la funcion `fromSnakeToCamelCase` tendremos un bucle for que irá posición a posición de la cadena y lo que hará es guardarla en una cadena nueva, con la condición de que si encuentra una `_` covertirá el siguiente elemento de la cadena en mayúscula con la **función `toUpperCase()`** introduciendola en la nueva cadena, además de incrementar la posicion en uno para saltarnos la letra ya analizada, retornando la cadena en formato *Camel Case*
+
+Por otro lado en la funcion `fromCamelToSnakeCase` tendrá tambien un bucle for que irá posición a posición de la cadena y lo que hará es guardarla en una cadena nueva, pero esta vez con la condición de que si encuentra una letra mayúscula lo que añadirá a una cadena es una `_` y el carácter en mayúscula convertido en minúscula con la **función `toLowerCase()`**,  retornando la cadena en formato *Snake Case*
+
 ### Ejercicio-5. Un solo golpe
 
 ***Código resuelto*** = [Solución](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct03-static-types-functions-Espinette/blob/master/src/ejercicio-5.ts)
@@ -106,6 +110,8 @@ Crear una función que combine 4 métodos en una línea. Esta recibira una caden
 ***Captura y explicación de la función resuelta***
 
  ![Ejercicio5Funcion](Imagenes/Ejercicio5.JPG) 
+
+Es una función anónima que tiene dos opciones, la primera es que si la cadena está vacía retorna `Broken!` y en caso de no ser así primero separa la cadena por espacios con la **función `split(" ")`**, las ordenará por orden alfabético con la **función `sort()`**, las volverá a unir con la **función `join(" ")`**, y finalmente eliminará todos los carácteres `a` y `e` de la cadena a través de la **función `replace(/[ae]/gi, "")`** retornando el resultado final.
 
 ### Ejercicio-6. Conversor ISBN
 
@@ -145,6 +151,8 @@ Crear una funcion que reciba un número entero y deberá devolver el siguiente n
 
  ![Ejercicio7Funcion](Imagenes/Ejercicio7.JPG) 
 
+Esta funcion tiene como objetivo obtener el siguiente número a partir de los mismos dígitos del numero introducido. Tendremos dos bucles for uno desde el inicio hasta el final del número y otro al revés desde el final al principio y lo que haremos es desplazar el último número a la izquierda hasta que encuentre uno menor que intercambiará y retornará el número, siendo el siguiente posible. De no encontrar ningun número final lo que hará es lo mismo pero analizando el penultimo numero con el resto y así sucesivamente. Si nunca encuentra un numero mayor posible lo que hará será reotnar -1.
+
 ### Ejercicio-8. Contando IPs
 
 ***Código resuelto*** = [Solución](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct03-static-types-functions-Espinette/blob/master/src/ejercicio-8.ts)
@@ -160,6 +168,8 @@ Crear una función que reciba como parámetro una cadena de texto que representa
 ***Captura y explicación de la función resuelta***
 
  ![Ejercicio8Funcion](Imagenes/Ejercicio8.JPG) 
+
+Esta función recibirá dos Ips, lo que haremos será calcular las Ips disponibles dentro de este rango. Primero de todo sepraremos con la **función `split(".")`** cada una de las ip en un array de string, además de crear un aux e inicializarlo a 1. Luego creamos un bucle for que lo que hará será recorrer desde la ultima posicion del array hasta la primera, lo que haremos será obtener en cifra numérica dicho valor y lo restaremos ip2 - ip1 ese resultado se lo multiplicamos al aux, que será 1 en la primera iteracion pero se irá multiplicando por 256 cada vez que avance en el bucle. Y retornará la suma total del final del bucle. 
 
 ### Ejercicio-9. Entrenador Pokemon
 
@@ -186,6 +196,8 @@ Aquellos que son del mismo tipo tendrán efectividad 0.5
 
  ![Ejercicio9Funcion](Imagenes/Ejercicio9.JPG) 
 
+La función recibirá los dos tipos de pokemon y la capacidad de ataque de uno y de defensa del otro. Esta función resulta bastante sencilla, y el objetivo principal será obtener el valor de la efectividad, lo que haremos será crear un `switch` que recibirirá el tipo del pokemon 1, en función del tipo que sea entrará a dicho caso. Dentro de ese caso encontraremos unas conidicones `if else` que en funcion del tipo del pokemon 2 establecerá un valor a la variable efectividad y saldremos del switch. Por ultimo se calcurará el daño y retornaremos el resultado de este.
+
 ### Ejercicio-10. Validador de nombre usuario
 
 ***Código resuelto*** = [Solución](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct03-static-types-functions-Espinette/blob/master/src/ejercicio-10.ts)
@@ -202,3 +214,5 @@ Crear una función `isValidUsername` que deberá comprobar la validez de un nomb
 ***Captura y explicación de la función resuelta***
 
  ![Ejercicio10Funcion](Imagenes/Ejercicio10.JPG) 
+
+La funcion `isValidUsername` recibirá un nombre de usuario, lo que hemos hecho ha sido crear unos conicionantes `if`en el que dentro de estes se establescan las condiciones pedidas en el enunciado, usando test de expresiones regulares para hacer más sencillo el código. Si se cumple todas las condiciones retornará true al ser el usuario válido y false si no lo es.
