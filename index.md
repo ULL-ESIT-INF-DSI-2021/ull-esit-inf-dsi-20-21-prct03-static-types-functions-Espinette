@@ -24,7 +24,7 @@ Crear una funcion `isLeapYear` que devuelva true o false en el caso de que sea o
 ***Captura y explicación de la función resuelta***
  
  ![Ejercicio1](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct03-static-types-functions-Espinette/blob/gh-pages/Imagenes/Ejercicio1.JPG)
- 
+ ![Ejercicio1Funcion][Ejercicio1Funcion]
 Para lograr el objetivo de la funcion, que recibe como parametro el año a analizar y como salida si es true o false en funcion de si es bisiesto. Creamos una condicion `if` para ver si el año es divisible por 4, de no ser así nos retorna false, en el caso de que sea divisible tambien debemos comprobar las otras dos condiciones, la primera es que no sea divible por 100 y la otra es que si es divisible por 100 lo sea por 400 tambien, en ambos casos retornando true, si no es cierta ninguna condicion devuelve que es falso y por lo tanto no es bisiesto.
 
 #### Ejercicio-2. Notación decimal y factorial
@@ -108,9 +108,4 @@ Crear una funcion isValid que recibira una cadena formada por numeors y letras y
 
 ***Captura y explicación de la función resuelta***
 
-## Welcome to GitHub Pages
-
-You can use the [editor on GitHub](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct03-static-types-functions-Espinette/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
+[Ejercicio1Funcion]: Imagenes/Ejercicio1.JPG "Ejercicio1Funcion"
