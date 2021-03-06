@@ -23,7 +23,7 @@ Crear una funcion `isLeapYear` que devuelva true o false en el caso de que sea o
  
 ***Captura y explicación de la función resuelta***
  
- ![Ejercicio1](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct03-static-types-functions-Espinette/blob/gh-pages/Imagenes/Ej1.PNG)
+ ![Ejercicio1](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct03-static-types-functions-Espinette/blob/gh-pages/Imagenes/Ejercicio1.JPG)
  
 Para lograr el objetivo de la funcion, que recibe como parametro el año a analizar y como salida si es true o false en funcion de si es bisiesto. Creamos una condicion `if` para ver si el año es divisible por 4, de no ser así nos retorna false, en el caso de que sea divisible tambien debemos comprobar las otras dos condiciones, la primera es que no sea divible por 100 y la otra es que si es divisible por 100 lo sea por 400 tambien, en ambos casos retornando true, si no es cierta ninguna condicion devuelve que es falso y por lo tanto no es bisiesto.
 
@@ -48,7 +48,8 @@ El número 463 codificado en notación factorial sería 341010 ya que:
 
 Crear una funcion isValid que recibira una cadena formada por numeors y letras y devuelva true si por cada numero que se encuentre tenga esa cantidad de letras de forma consecutiva y devuelve false en caso de no cumplirse. Un ejemplo de cadena válida sería:
 
-  - ´3hey5hello2hi´ se debería dividir en ´3, hey, 5, hello, 2, hi´.
+  - `3hey5hello2hi` se debería dividir en `3, hey, 5, hello, 2, hi`.
+ 
 ***Captura y explicación de la función resuelta***
 
 #### Ejercicio-4. Conversor de estilo
