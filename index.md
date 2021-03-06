@@ -13,6 +13,16 @@ Esta práctica tiene como función principal empezar a realizar ejercicios de pr
 
 *Código resuelto* = [Solución](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct03-static-types-functions-Espinette/blob/master/src/ejercicio-1.ts)
 
+***Resumen enunciado*** 
+
+Crear una funcion que devuelva true o false en el caso de que sea o no bisiesto el año. Para que una año sea bisiesto debe cumplir las siguientes condiciones:
+
+  - Cada año que es divisible por 4.
+  - Excepto cada año que es divisible por 100.
+  - Al menos que el año también sea divisible por 400.
+ 
+ ***Captura y explicación de la función resuelta***
+
 #### Ejercicio-2. Notación decimal y factorial
 
 *Código resuelto* = [Solución](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct03-static-types-functions-Espinette/blob/master/src/ejercicio-2.ts)
