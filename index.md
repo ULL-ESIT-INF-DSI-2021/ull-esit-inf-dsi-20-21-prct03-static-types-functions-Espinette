@@ -9,7 +9,7 @@ Esta práctica tiene como función principal empezar a realizar ejercicios de pr
 
 ### ELABORACIÓN DE LOS EJERCICIOS
 
-#### Ejercicio-1. Años bisiestos
+### Ejercicio-1. Años bisiestos
 
 *Código resuelto* = [Solución](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct03-static-types-functions-Espinette/blob/master/src/ejercicio-1.ts)
 
@@ -27,7 +27,7 @@ Crear una funcion `isLeapYear` que devuelva true o false en el caso de que sea o
 
 Para lograr el objetivo de la funcion, que recibe como parametro el año a analizar y como salida si es true o false en funcion de si es bisiesto. Creamos una condicion `if` para ver si el año es divisible por 4, de no ser así nos retorna false, en el caso de que sea divisible tambien debemos comprobar las otras dos condiciones, la primera es que no sea divible por 100 y la otra es que si es divisible por 100 lo sea por 400 tambien, en ambos casos retornando true, si no es cierta ninguna condicion devuelve que es falso y por lo tanto no es bisiesto.
 
-#### Ejercicio-2. Notación decimal y factorial
+### Ejercicio-2. Notación decimal y factorial
 
 *Código resuelto* = [Solución](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct03-static-types-functions-Espinette/blob/master/src/ejercicio-2.ts)
 
@@ -42,7 +42,7 @@ El número 463 codificado en notación factorial sería 341010 ya que:
 
  ![Ejercicio2Funcion](Imagenes/Ejercicio2.JPG) 
 
-#### Ejercicio-3. Validador de mensajes
+### Ejercicio-3. Validador de mensajes
 
 *Código resuelto* = [Solución](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct03-static-types-functions-Espinette/blob/master/src/ejercicio-3.ts)
 
@@ -56,7 +56,7 @@ Crear una funcion isValid que recibira una cadena formada por numeors y letras y
 
  ![Ejercicio3Funcion](Imagenes/Ejercicio3.JPG) 
 
-#### Ejercicio-4. Conversor de estilo
+### Ejercicio-4. Conversor de estilo
 
 *Código resuelto* = [Solución](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct03-static-types-functions-Espinette/blob/master/src/ejercicio-4.ts)
 
@@ -71,7 +71,7 @@ Desarrollar dos funciones `fromSnakeToCamelCase` y `fromCamelToSnakeCase` cuyo o
 
  ![Ejercicio4Funcion](Imagenes/Ejercicio4.JPG) 
 
-#### Ejercicio-5. Un solo golpe
+### Ejercicio-5. Un solo golpe
 
 *Código resuelto* = [Solución](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct03-static-types-functions-Espinette/blob/master/src/ejercicio-5.ts)
 
@@ -89,7 +89,7 @@ Crear una función que combine 4 métodos en una línea. Esta recibira una caden
 
  ![Ejercicio5Funcion](Imagenes/Ejercicio5.JPG) 
 
-#### Ejercicio-6. Conversor ISBN
+### Ejercicio-6. Conversor ISBN
 
 *Código resuelto* = [Solución](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct03-static-types-functions-Espinette/blob/master/src/ejercicio-6.ts)
 
@@ -108,7 +108,7 @@ La funcion retornará true o false en funcion de si es válido o no. Dos ejemplo
 
  ![Ejercicio6Funcion](Imagenes/Ejercicio6.JPG) 
 
-#### Ejercicio-7. El siguiente número
+### Ejercicio-7. El siguiente número
 
 *Código resuelto* = [Solución](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct03-static-types-functions-Espinette/blob/master/src/ejercicio-7.ts)
 
@@ -127,7 +127,7 @@ Crear una funcion que reciba un número entero y deberá devolver el siguiente n
 
  ![Ejercicio7Funcion](Imagenes/Ejercicio7.JPG) 
 
-#### Ejercicio-8. Contando IPs
+### Ejercicio-8. Contando IPs
 
 *Código resuelto* = [Solución](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct03-static-types-functions-Espinette/blob/master/src/ejercicio-8.ts)
 
@@ -143,7 +143,7 @@ Crear una función que reciba como parámetro una cadena de texto que representa
 
  ![Ejercicio8Funcion](Imagenes/Ejercicio8.JPG) 
 
-#### Ejercicio-9. Entrenador Pokemon
+### Ejercicio-9. Entrenador Pokemon
 
 *Código resuelto* = [Solución](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct03-static-types-functions-Espinette/blob/master/src/ejercicio-9.ts)
 
@@ -168,7 +168,7 @@ Aquellos que son del mismo tipo tendrán efectividad 0.5
 
  ![Ejercicio9Funcion](Imagenes/Ejercicio9.JPG) 
 
-#### Ejercicio-10. Validador de nombre usuario
+### Ejercicio-10. Validador de nombre usuario
 
 *Código resuelto* = [Solución](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct03-static-types-functions-Espinette/blob/master/src/ejercicio-10.ts)
 
