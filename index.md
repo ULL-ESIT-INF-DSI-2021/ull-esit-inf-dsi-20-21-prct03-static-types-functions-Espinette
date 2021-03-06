@@ -23,7 +23,7 @@ Crear una funcion `isLeapYear` que devuelva true o false en el caso de que sea o
  
 ***Captura y explicación de la función resuelta***
  
- ![Ejercicio1Funcion]Imagenes/Ejercicio1.JPG 
+ ![Ejercicio1Funcion](Imagenes/Ejercicio1.JPG) 
 
 Para lograr el objetivo de la funcion, que recibe como parametro el año a analizar y como salida si es true o false en funcion de si es bisiesto. Creamos una condicion `if` para ver si el año es divisible por 4, de no ser así nos retorna false, en el caso de que sea divisible tambien debemos comprobar las otras dos condiciones, la primera es que no sea divible por 100 y la otra es que si es divisible por 100 lo sea por 400 tambien, en ambos casos retornando true, si no es cierta ninguna condicion devuelve que es falso y por lo tanto no es bisiesto.
 
