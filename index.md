@@ -15,7 +15,7 @@ Esta práctica tiene como función principal empezar a realizar ejercicios de pr
 
 ***Resumen enunciado*** 
 
-Crear una funcion que devuelva true o false en el caso de que sea o no bisiesto el año. Para que una año sea bisiesto debe cumplir las siguientes condiciones:
+Crear una funcion `isLeapYear` que devuelva true o false en el caso de que sea o no bisiesto el año. Para que una año sea bisiesto debe cumplir las siguientes condiciones:
 
   - Cada año que es divisible por 4.
   - Excepto cada año que es divisible por 100.
@@ -24,42 +24,68 @@ Crear una funcion que devuelva true o false en el caso de que sea o no bisiesto 
  ***Captura y explicación de la función resuelta***
  
  ![Ejercicio1](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct03-static-types-functions-Espinette/blob/gh-pages/Imagenes/Ej1.PNG)
+ 
+Para lograr el objetivo de la funcion, que recibe como parametro el año a analizar y como salida si es true o false en funcion de si es bisiesto. Creamos una condicion `if` para ver si el año es divisible por 4, de no ser así nos retorna false, en el caso de que sea divisible tambien debemos comprobar las otras dos condiciones, la primera es que no sea divible por 100 y la otra es que si es divisible por 100 lo sea por 400 tambien, en ambos casos retornando true, si no es cierta ninguna condicion devuelve que es falso y por lo tanto no es bisiesto.
 
 #### Ejercicio-2. Notación decimal y factorial
 
 *Código resuelto* = [Solución](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct03-static-types-functions-Espinette/blob/master/src/ejercicio-2.ts)
 
+***Resumen enunciado*** 
+
+Crear dos funciones, `decimalToFactorial` y `factorialToDecimal`. La primera recibirá un numero entero y devolverá una cadena de texto con la representación factorial del número y la segunda función hará justo lo contrario, recibirá una cadena de texto en notación factorial y devolverá el número entero que representa. Un ejemplo de representación sería:
+
+El número 463 codificado en notación factorial sería 341010 ya que:
+  - 463 = 3 x 5! + 4 x 4! + 1 x 3! + 0 x 2! + 1 x 1! + 0 x 0!
+  
+  
 #### Ejercicio-3. Validador de mensajes
 
 *Código resuelto* = [Solución](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct03-static-types-functions-Espinette/blob/master/src/ejercicio-3.ts)
+
+***Resumen enunciado*** 
 
 #### Ejercicio-4. Conversor de estilo
 
 *Código resuelto* = [Solución](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct03-static-types-functions-Espinette/blob/master/src/ejercicio-4.ts)
 
+***Resumen enunciado*** 
+
 #### Ejercicio-5. Un solo golpe
 
 *Código resuelto* = [Solución](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct03-static-types-functions-Espinette/blob/master/src/ejercicio-5.ts)
+
+***Resumen enunciado*** 
 
 #### Ejercicio-6. Conversor ISBN
 
 *Código resuelto* = [Solución](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct03-static-types-functions-Espinette/blob/master/src/ejercicio-6.ts)
 
+***Resumen enunciado*** 
+
 #### Ejercicio-7. El siguiente número
 
 *Código resuelto* = [Solución](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct03-static-types-functions-Espinette/blob/master/src/ejercicio-7.ts)
+
+***Resumen enunciado*** 
 
 #### Ejercicio-8. Contando IPs
 
 *Código resuelto* = [Solución](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct03-static-types-functions-Espinette/blob/master/src/ejercicio-8.ts)
 
+***Resumen enunciado*** 
+
 #### Ejercicio-9. Entrenador Pokemon
 
 *Código resuelto* = [Solución](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct03-static-types-functions-Espinette/blob/master/src/ejercicio-9.ts)
 
+***Resumen enunciado*** 
+
 #### Ejercicio-10. Validador de nombre usuario
 
 *Código resuelto* = [Solución](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct03-static-types-functions-Espinette/blob/master/src/ejercicio-10.ts)
+
+***Resumen enunciado*** 
 
 ## Welcome to GitHub Pages
 
