@@ -40,13 +40,15 @@ El número 463 codificado en notación factorial sería 341010 ya que:
 
 ***Captura y explicación de la función resuelta***
 
-  
 #### Ejercicio-3. Validador de mensajes
 
 *Código resuelto* = [Solución](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct03-static-types-functions-Espinette/blob/master/src/ejercicio-3.ts)
 
 ***Resumen enunciado*** 
 
+Crear una funcion isValid que recibira una cadena formada por numeors y letras y devuelva true si por cada numero que se encuentre tenga esa cantidad de letras de forma consecutiva y devuelve false en caso de no cumplirse. Un ejemplo de cadena válida sería:
+
+  - ´3hey5hello2hi´ se debería dividir en ´3, hey, 5, hello, 2, hi´.
 ***Captura y explicación de la función resuelta***
 
 #### Ejercicio-4. Conversor de estilo
