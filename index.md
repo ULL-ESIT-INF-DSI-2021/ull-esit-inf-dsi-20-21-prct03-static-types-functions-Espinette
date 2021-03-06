@@ -27,6 +27,8 @@ Crear una funcion `isLeapYear` que devuelva true o false en el caso de que sea o
 
 Para lograr el objetivo de la funcion, que recibe como parametro el año a analizar y como salida si es true o false en funcion de si es bisiesto. Creamos una condicion `if` para ver si el año es divisible por 4, de no ser así nos retorna false, en el caso de que sea divisible tambien debemos comprobar las otras dos condiciones, la primera es que no sea divible por 100 y la otra es que si es divisible por 100 lo sea por 400 tambien, en ambos casos retornando true, si no es cierta ninguna condicion devuelve que es falso y por lo tanto no es bisiesto.
 
+***Salida del programa***
+
 ### Ejercicio-2. Notación decimal y factorial
 
 ***Código resuelto*** = [Solución](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct03-static-types-functions-Espinette/blob/master/src/ejercicio-2.ts)
@@ -57,6 +59,7 @@ En la función `factorialToDecimal` se le pasa una cadena de texto en notacaión
   2. Bucle for desde la primera posición de la cadena hasta la última posición de este. En el que obtenemos el dígito a analizar, lo pasamos de string a number a traves de la **función `parseInt`** luego obtenemos el resultado del número por el factorial de aux, y lo sumamos al valor final, y decrementamos el valor de aux.
   3. Return del resultado final
 
+***Salida del programa***
 
 ### Ejercicio-3. Validador de mensajes
 
@@ -73,6 +76,8 @@ Crear una funcion isValid que recibira una cadena formada por numeors y letras y
  ![Ejercicio3Funcion](Imagenes/Ejercicio3.JPG) 
 
 El objetivo de esta función es comprobar si un mensaje es válido. Para ello creamos un bucle for que recorre la cadena entera, primero comprueba si la posicion en la que se encuentra es un número si no es así retorna falso. Luego avanzamos en la cadena hasta la primera letra y lo que hacemos es un bucle for dentro del anterior que vaya desde 0 hasta el número encontrado, que lo que hace es ir posición a posición para comprobar que haya tanta letras como el numero que indicaba previamente. Si todo esto se cumple retorna true, en caso de no ser así retorna false, al ser un mensaje no válido.
+
+***Salida del programa***
 
 ### Ejercicio-4. Conversor de estilo
 
@@ -92,6 +97,8 @@ Desarrollar dos funciones `fromSnakeToCamelCase` y `fromCamelToSnakeCase` cuyo o
 En la funcion `fromSnakeToCamelCase` tendremos un bucle for que irá posición a posición de la cadena y lo que hará es guardarla en una cadena nueva, con la condición de que si encuentra una `_` covertirá el siguiente elemento de la cadena en mayúscula con la **función `toUpperCase()`** introduciendola en la nueva cadena, además de incrementar la posicion en uno para saltarnos la letra ya analizada, retornando la cadena en formato *Camel Case*
 
 Por otro lado en la funcion `fromCamelToSnakeCase` tendrá tambien un bucle for que irá posición a posición de la cadena y lo que hará es guardarla en una cadena nueva, pero esta vez con la condición de que si encuentra una letra mayúscula lo que añadirá a una cadena es una `_` y el carácter en mayúscula convertido en minúscula con la **función `toLowerCase()`**,  retornando la cadena en formato *Snake Case*
+
+***Salida del programa***
 
 ### Ejercicio-5. Un solo golpe
 
@@ -132,6 +139,10 @@ La funcion retornará true o false en funcion de si es válido o no. Dos ejemplo
 
  ![Ejercicio6Funcion](Imagenes/Ejercicio6.JPG) 
 
+La función `isValidISBN` recibirá una cadena tipo ISBN-10, primero lo que hacemos es igual a la cadena con la misma cadena pero eliminando el `-` en caso de tener, con la **funcion `replace(/[-]/g, "")`**, luego haremos un bucle for que recorra cada posicion de la cadena en caso de que se encuentre con una X en vez de un número del [0-9] lo que haremos será sustituir la X por un 10. Además al inicio de la funcion habiamos iniciado una variable mult a 10, que será el numero a multiplicar en funcion de la posicion en que nos encontremos. Lo que se hará dentro del for es un sumatorio del la posicion actual * el multiplicador, siendo esto restado por -1 en cada iteracion del bucle for. Por ultimo fuera del for para que un ISBN-10 sea válido deber ser divisible por 11, lo que haremos será un if que si se cumple retornará true y si no se cumple retornara false.
+
+***Salida del programa***
+
 ### Ejercicio-7. El siguiente número
 
 ***Código resuelto*** = [Solución](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct03-static-types-functions-Espinette/blob/master/src/ejercicio-7.ts)
@@ -153,6 +164,8 @@ Crear una funcion que reciba un número entero y deberá devolver el siguiente n
 
 Esta funcion tiene como objetivo obtener el siguiente número a partir de los mismos dígitos del numero introducido. Tendremos dos bucles for uno desde el inicio hasta el final del número y otro al revés desde el final al principio y lo que haremos es desplazar el último número a la izquierda hasta que encuentre uno menor que intercambiará y retornará el número, siendo el siguiente posible. De no encontrar ningun número final lo que hará es lo mismo pero analizando el penultimo numero con el resto y así sucesivamente. Si nunca encuentra un numero mayor posible lo que hará será reotnar -1.
 
+***Salida del programa***
+
 ### Ejercicio-8. Contando IPs
 
 ***Código resuelto*** = [Solución](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct03-static-types-functions-Espinette/blob/master/src/ejercicio-8.ts)
@@ -170,6 +183,8 @@ Crear una función que reciba como parámetro una cadena de texto que representa
  ![Ejercicio8Funcion](Imagenes/Ejercicio8.JPG) 
 
 Esta función recibirá dos Ips, lo que haremos será calcular las Ips disponibles dentro de este rango. Primero de todo sepraremos con la **función `split(".")`** cada una de las ip en un array de string, además de crear un aux e inicializarlo a 1. Luego creamos un bucle for que lo que hará será recorrer desde la ultima posicion del array hasta la primera, lo que haremos será obtener en cifra numérica dicho valor y lo restaremos ip2 - ip1 ese resultado se lo multiplicamos al aux, que será 1 en la primera iteracion pero se irá multiplicando por 256 cada vez que avance en el bucle. Y retornará la suma total del final del bucle. 
+
+***Salida del programa***
 
 ### Ejercicio-9. Entrenador Pokemon
 
@@ -198,6 +213,8 @@ Aquellos que son del mismo tipo tendrán efectividad 0.5
 
 La función recibirá los dos tipos de pokemon y la capacidad de ataque de uno y de defensa del otro. Esta función resulta bastante sencilla, y el objetivo principal será obtener el valor de la efectividad, lo que haremos será crear un `switch` que recibirirá el tipo del pokemon 1, en función del tipo que sea entrará a dicho caso. Dentro de ese caso encontraremos unas conidicones `if else` que en funcion del tipo del pokemon 2 establecerá un valor a la variable efectividad y saldremos del switch. Por ultimo se calcurará el daño y retornaremos el resultado de este.
 
+***Salida del programa***
+
 ### Ejercicio-10. Validador de nombre usuario
 
 ***Código resuelto*** = [Solución](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct03-static-types-functions-Espinette/blob/master/src/ejercicio-10.ts)
@@ -216,3 +233,5 @@ Crear una función `isValidUsername` que deberá comprobar la validez de un nomb
  ![Ejercicio10Funcion](Imagenes/Ejercicio10.JPG) 
 
 La funcion `isValidUsername` recibirá un nombre de usuario, lo que hemos hecho ha sido crear unos conicionantes `if` en el que dentro de estes se establescan las condiciones pedidas en el enunciado, usando test de expresiones regulares para hacer más sencillo el código. Si se cumple todas las condiciones retornará true al ser el usuario válido y false si no lo es.
+
+***Salida del programa***
