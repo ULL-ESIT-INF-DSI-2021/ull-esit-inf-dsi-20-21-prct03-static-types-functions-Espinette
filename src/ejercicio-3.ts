@@ -4,7 +4,6 @@ function isValid(cadena: string) {
   let cadenanew: string;
   let aux: number;
   let aux2: string;
-  let aux3: number;
   cadenanew = cadena;
   for (let i: number = 0; i < cadena.length; i++) {
     aux = parseInt(cadenanew, 10);
@@ -16,11 +15,7 @@ function isValid(cadena: string) {
     }
     for (let j: number = 1; j <= aux; j++) {
       aux2 = cadena.charAt(i + j);
-      if (aux2 == '') {
-        return false;
-      }
-      aux3 = parseInt(aux2, 10);
-      if (isNaN(aux3) == false) {
+      if (!/[a-z]/gi.test(aux2)) {
         return false;
       }
     }
