@@ -1,3 +1,4 @@
+// Ejercicio 10 - Validador de nombre usuario
 function isValidUsername(nombreUser) {
     const tam = nombreUser.length;
     if ((tam >= 4) && (tam <= 30)) {

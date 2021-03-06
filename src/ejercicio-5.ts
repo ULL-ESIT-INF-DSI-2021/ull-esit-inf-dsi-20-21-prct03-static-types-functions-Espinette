@@ -1,11 +1,7 @@
 // Ejercicio 5 - Un solo golpe
 
-function chuckNorris(cadena: string) {
-  if (cadena == ``) {
-    return `Broken!`;
-  }
-  return cadena.split(" ").sort().join(" ").replace(/[ae]/gi, "");
-}
+const chuckNorris = (cadena: string) => cadena == ``? (`Broken!`):
+    (cadena.split(" ").sort().join(" ").replace(/[ae]/gi, ""));
 
 const OnePunchA: string = ``;
 const SolOnePunchA: string = chuckNorris(OnePunchA);

@@ -1,3 +1,4 @@
+// Ejercicio 8 - Contando IPs
 function ipsInRange(ip1, ip2) {
     const ip1Num = ip1.split(".");
     const ip2Num = ip2.split(".");

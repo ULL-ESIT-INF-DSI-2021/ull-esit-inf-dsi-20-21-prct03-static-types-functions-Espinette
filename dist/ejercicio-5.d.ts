@@ -1,4 +1,4 @@
-declare function chuckNorris(cadena: string): string;
+declare const chuckNorris: (cadena: string) => string;
 declare const OnePunchA: string;
 declare const SolOnePunchA: string;
 declare const OnePunchB: string;
