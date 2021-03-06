@@ -215,4 +215,4 @@ Crear una función `isValidUsername` que deberá comprobar la validez de un nomb
 
  ![Ejercicio10Funcion](Imagenes/Ejercicio10.JPG) 
 
-La funcion `isValidUsername` recibirá un nombre de usuario, lo que hemos hecho ha sido crear unos conicionantes `if`en el que dentro de estes se establescan las condiciones pedidas en el enunciado, usando test de expresiones regulares para hacer más sencillo el código. Si se cumple todas las condiciones retornará true al ser el usuario válido y false si no lo es.
+La funcion `isValidUsername` recibirá un nombre de usuario, lo que hemos hecho ha sido crear unos conicionantes `if` en el que dentro de estes se establescan las condiciones pedidas en el enunciado, usando test de expresiones regulares para hacer más sencillo el código. Si se cumple todas las condiciones retornará true al ser el usuario válido y false si no lo es.
