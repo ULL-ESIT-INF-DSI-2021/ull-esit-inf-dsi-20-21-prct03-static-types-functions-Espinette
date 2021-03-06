@@ -29,6 +29,8 @@ Para lograr el objetivo de la funcion, que recibe como parametro el año a anali
 
 ***Salida del programa***
 
+ ![Ejercicio1Salida](Imagenes/Ejercicio1Salida.JPG) 
+
 ### Ejercicio-2. Notación decimal y factorial
 
 ***Código resuelto*** = [Solución](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct03-static-types-functions-Espinette/blob/master/src/ejercicio-2.ts)
@@ -61,6 +63,8 @@ En la función `factorialToDecimal` se le pasa una cadena de texto en notacaión
 
 ***Salida del programa***
 
+ ![Ejercicio2Salida](Imagenes/Ejercicio2Salida.JPG) 
+
 ### Ejercicio-3. Validador de mensajes
 
 ***Código resuelto*** = [Solución](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct03-static-types-functions-Espinette/blob/master/src/ejercicio-3.ts)
@@ -78,6 +82,8 @@ Crear una funcion isValid que recibira una cadena formada por numeors y letras y
 El objetivo de esta función es comprobar si un mensaje es válido. Para ello creamos un bucle for que recorre la cadena entera, primero comprueba si la posicion en la que se encuentra es un número si no es así retorna falso. Luego avanzamos en la cadena hasta la primera letra y lo que hacemos es un bucle for dentro del anterior que vaya desde 0 hasta el número encontrado, que lo que hace es ir posición a posición para comprobar que haya tanta letras como el numero que indicaba previamente. Si todo esto se cumple retorna true, en caso de no ser así retorna false, al ser un mensaje no válido.
 
 ***Salida del programa***
+
+![Ejercicio3Salida](Imagenes/Ejercicio3Salida.JPG) 
 
 ### Ejercicio-4. Conversor de estilo
 
@@ -100,6 +106,8 @@ Por otro lado en la funcion `fromCamelToSnakeCase` tendrá tambien un bucle for 
 
 ***Salida del programa***
 
+ ![Ejercicio4Salida](Imagenes/Ejercicio4Salida.JPG) 
+
 ### Ejercicio-5. Un solo golpe
 
 ***Código resuelto*** = [Solución](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct03-static-types-functions-Espinette/blob/master/src/ejercicio-5.ts)
@@ -119,6 +127,10 @@ Crear una función que combine 4 métodos en una línea. Esta recibira una caden
  ![Ejercicio5Funcion](Imagenes/Ejercicio5.JPG) 
 
 Es una función anónima que tiene dos opciones, la primera es que si la cadena está vacía retorna `Broken!` y en caso de no ser así primero separa la cadena por espacios con la **función `split(" ")`**, las ordenará por orden alfabético con la **función `sort()`**, las volverá a unir con la **función `join(" ")`**, y finalmente eliminará todos los carácteres `a` y `e` de la cadena a través de la **función `replace(/[ae]/gi, "")`** retornando el resultado final.
+
+***Salida del programa***
+
+ ![Ejercicio5Salida](Imagenes/Ejercicio5Salida.JPG) 
 
 ### Ejercicio-6. Conversor ISBN
 
@@ -143,6 +155,8 @@ La función `isValidISBN` recibirá una cadena tipo ISBN-10, primero lo que hace
 
 ***Salida del programa***
 
+ ![Ejercicio6Salida](Imagenes/Ejercicio6Salida.JPG) 
+
 ### Ejercicio-7. El siguiente número
 
 ***Código resuelto*** = [Solución](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct03-static-types-functions-Espinette/blob/master/src/ejercicio-7.ts)
@@ -166,6 +180,8 @@ Esta funcion tiene como objetivo obtener el siguiente número a partir de los mi
 
 ***Salida del programa***
 
+ ![Ejercicio7Salida](Imagenes/Ejercicio7Salida.JPG) 
+
 ### Ejercicio-8. Contando IPs
 
 ***Código resuelto*** = [Solución](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct03-static-types-functions-Espinette/blob/master/src/ejercicio-8.ts)
@@ -185,6 +201,8 @@ Crear una función que reciba como parámetro una cadena de texto que representa
 Esta función recibirá dos Ips, lo que haremos será calcular las Ips disponibles dentro de este rango. Primero de todo sepraremos con la **función `split(".")`** cada una de las ip en un array de string, además de crear un aux e inicializarlo a 1. Luego creamos un bucle for que lo que hará será recorrer desde la ultima posicion del array hasta la primera, lo que haremos será obtener en cifra numérica dicho valor y lo restaremos ip2 - ip1 ese resultado se lo multiplicamos al aux, que será 1 en la primera iteracion pero se irá multiplicando por 256 cada vez que avance en el bucle. Y retornará la suma total del final del bucle. 
 
 ***Salida del programa***
+
+ ![Ejercicio8Salida](Imagenes/Ejercicio8Salida.JPG) 
 
 ### Ejercicio-9. Entrenador Pokemon
 
@@ -215,6 +233,8 @@ La función recibirá los dos tipos de pokemon y la capacidad de ataque de uno y
 
 ***Salida del programa***
 
+ ![Ejercicio9Salida](Imagenes/Ejercicio9Salida.JPG) 
+
 ### Ejercicio-10. Validador de nombre usuario
 
 ***Código resuelto*** = [Solución](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct03-static-types-functions-Espinette/blob/master/src/ejercicio-10.ts)
@@ -235,3 +255,5 @@ Crear una función `isValidUsername` que deberá comprobar la validez de un nomb
 La funcion `isValidUsername` recibirá un nombre de usuario, lo que hemos hecho ha sido crear unos conicionantes `if` en el que dentro de estes se establescan las condiciones pedidas en el enunciado, usando test de expresiones regulares para hacer más sencillo el código. Si se cumple todas las condiciones retornará true al ser el usuario válido y false si no lo es.
 
 ***Salida del programa***
+
+ ![Ejercicio10Salida](Imagenes/Ejercicio10Salida.JPG) 
