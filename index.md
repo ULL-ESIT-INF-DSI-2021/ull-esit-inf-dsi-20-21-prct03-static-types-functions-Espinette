@@ -23,8 +23,8 @@ Crear una funcion `isLeapYear` que devuelva true o false en el caso de que sea o
  
 ***Captura y explicación de la función resuelta***
  
- ![Ejercicio1](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct03-static-types-functions-Espinette/blob/gh-pages/Imagenes/Ejercicio1.JPG)
- ![Ejercicio1Funcion][Ejercicio1Funcion]
+ ![Ejercicio1Funcion]Imagenes/Ejercicio1.JPG 
+
 Para lograr el objetivo de la funcion, que recibe como parametro el año a analizar y como salida si es true o false en funcion de si es bisiesto. Creamos una condicion `if` para ver si el año es divisible por 4, de no ser así nos retorna false, en el caso de que sea divisible tambien debemos comprobar las otras dos condiciones, la primera es que no sea divible por 100 y la otra es que si es divisible por 100 lo sea por 400 tambien, en ambos casos retornando true, si no es cierta ninguna condicion devuelve que es falso y por lo tanto no es bisiesto.
 
 #### Ejercicio-2. Notación decimal y factorial
@@ -58,6 +58,11 @@ Crear una funcion isValid que recibira una cadena formada por numeors y letras y
 
 ***Resumen enunciado*** 
 
+Desarrollar dos funciones `fromSnakeToCamelCase` y `fromCamelToSnakeCase` cuyo objetivo será recibir una cadena de texto y deberá convertir esa cadena al formato contrario. Ambos formatos son los siguientes:
+
+  - *Snake case* = `sample_string` y `the_stealth_warrior`
+  - *Camel case* = `sampleString` y `theStealthWarrior`
+ 
 ***Captura y explicación de la función resuelta***
 
 #### Ejercicio-5. Un solo golpe
@@ -66,6 +71,14 @@ Crear una funcion isValid que recibira una cadena formada por numeors y letras y
 
 ***Resumen enunciado*** 
 
+Crear una función que combine 4 métodos en una línea. Esta recibira una cadena, está cadena debe sapararse por palabras, ordenarlas, unirla de nuevo nuevamente y eliminar todas las letras ´a´ y ´e´, mostrando la cadena resultante, en caso de recibir la cadena vacía debreá devolver el mensaje `Broken!`. Algun ejemplo esperado son los siguientes:
+
+  - onePunch(‘Beard Jeans Hairbrush Knuckleduster Sand’) => `Brd Hirbrush Jns Knuckldustr Snd`
+  - onePunch(‘Sock Beard Vest Lady Sage’) =>`Brd Ldy Sg Sock Vst`
+  - onePunch(‘Beard Sack Gun Parachute Face-Kicking-Shoes’) => `Brd Fc-Kicking-Shos Gun Prchut Sck`
+  - onePunch(‘Snot Snow Soda Tank Beard’) => `Brd Snot Snow Sod Tnk`
+  - onePunch(‘’) =>`Broken!`
+  
 ***Captura y explicación de la función resuelta***
 
 #### Ejercicio-6. Conversor ISBN
@@ -74,6 +87,15 @@ Crear una funcion isValid que recibira una cadena formada por numeors y letras y
 
 ***Resumen enunciado*** 
 
+Crear una función `isValidISBN` que comprobará la validez de un código ISBN-10. Esta función recibirá como parámetro una cadena de un posible código ISBN-10 separada o no por guiones. Estará compuesto por 9 digitos numéricos y un caracter de comprobación que podrá ser un numero del 0-9 o una X (En este caso la X tendrá valor 10). Para comprobar la validez se hará a partir de la siguiente fórmula:
+
+`(x1 * 10 + x2 * 9 + x3 * 8 + x4 * 7 + x5 * 6 + x6 * 5 + x7 * 4 + x8 * 3 + x9 * 2 + x10 * 1) mod 11 == 0`
+
+La funcion retornará true o false en funcion de si es válido o no. Dos ejemplos de ISBN válidos son:
+
+  - `3-598-21508-8` o `3598215088`
+  - `3-598-21507-X` o `359821507X`
+  
 ***Captura y explicación de la función resuelta***
 
 #### Ejercicio-7. El siguiente número
@@ -82,6 +104,15 @@ Crear una funcion isValid que recibira una cadena formada por numeors y letras y
 
 ***Resumen enunciado*** 
 
+Crear una funcion que reciba un número entero y deberá devolver el siguiente número mayor formado por los mismos dígitos que el número encontrado. En caso de no encontrar un número mayor devolverá un -1. Algunos ejemplos son: 
+
+  - 12 –> 21
+  - 513 –> 531
+  - 2017 –> 2071
+  - 9 -> -1
+  - 111 -> -1
+  - 531 -> -1
+  
 ***Captura y explicación de la función resuelta***
 
 #### Ejercicio-8. Contando IPs
@@ -89,6 +120,12 @@ Crear una funcion isValid que recibira una cadena formada por numeors y letras y
 *Código resuelto* = [Solución](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct03-static-types-functions-Espinette/blob/master/src/ejercicio-8.ts)
 
 ***Resumen enunciado*** 
+
+Crear una función que reciba como parámetro una cadena de texto que representa una direccion IPv4, esta deberá devolver el valor número de las IPs disponibles en ese rango(Incluyendo la primera pero no la última). Algunos ejemplos para esta función son:
+
+  - `ipsInRange(“10.0.0.0”, “10.0.0.50”) == 50`
+  - `ipsInRange(“10.0.0.0”, “10.0.1.0”) == 256`
+  - `ipsInRange(“20.0.0.10”, “20.0.1.0”) == 246`
 
 ***Captura y explicación de la función resuelta***
 
@@ -98,6 +135,21 @@ Crear una funcion isValid que recibira una cadena formada por numeors y letras y
 
 ***Resumen enunciado*** 
 
+Desarrollar una función que reciba como parámetro el tipo de Pokemon que tiene, el tipo de Pokemon del atacante, la capacidad de ataque del primero y la de defensa del segundo. La función deovlverá el daño causado que se obtiene a partir de la siguiente fórmula:
+
+`daño = 50 * (ataque / defensa) * efectividad`
+
+La efectividad será 2, 1 o 0.5 en función de cada emparejamiento:
+
+  - fuego > hierba
+  - fuego < agua
+  - fuego = eléctrico
+  - agua < hierba
+  - agua < eléctrico
+  - hierba = eléctrico
+
+Aquellos que son del mismo tipo tendrán efectividad 0.5
+
 ***Captura y explicación de la función resuelta***
 
 #### Ejercicio-10. Validador de nombre usuario
@@ -106,6 +158,12 @@ Crear una funcion isValid que recibira una cadena formada por numeors y letras y
 
 ***Resumen enunciado*** 
 
+Crear una función `isValidUsername` que deberá comprobar la validez de un nombre de usuario, esta recibirá una cadena con el nombre de usuario y retornará true o false en función de si cumple o no las siguientes condiciones:
+
+  - El nombre de usuario tiene que tener al menos 4 caracteres y no más de 30.
+  - El nombre de usuario no puede empezar ni terminar con un guión bajo.
+  - El nombre de usuario tiene que contener al menos una letra mayúscula, una letra minúscula, un número y algún símbolo especial ($,-,_).
+  - No se permite la repetición de un mismo tipo de caracter más de dos veces seguidas.
+
 ***Captura y explicación de la función resuelta***
 
-[Ejercicio1Funcion]: Imagenes/Ejercicio1.JPG "Ejercicio1Funcion"
