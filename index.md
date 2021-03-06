@@ -5,7 +5,7 @@
 
 ### INTRODUCCIÓN
 
-Esta práctica tiene como función principal empezar a realizar ejercicios de programación para empezar a realizar codigo en TypeScript, principalemte en los disintos tipos de datos estáticos como las funciones. A continuación mostraremos la solución a cada uno de los diez ejercicios propuestos con una breve explicación de cada uno y una captura de pantalla con un ejemplo de salida del ejercicio. Si desea leer los enunciados de cada ejercicio los podrás encontrar pinchando [aqui](https://ull-esit-inf-dsi-2021.github.io/prct03-types-functions/).
+Esta práctica tiene como función principal empezar a realizar ejercicios de programación para empezar a realizar codigo en TypeScript, principalemte en los disintos tipos de datos estáticos como las funciones. Primero de todo estableceremos la creacion de nuestro proyecto para trabajar con TypeScript en el siguiente [enlace](https://ull-esit-inf-dsi-2021.github.io/typescript-theory/typescript-project-setup.html) A continuación mostraremos la solución a cada uno de los diez ejercicios propuestos con una breve explicación de cada uno y una captura de pantalla con un ejemplo de salida del ejercicio. Si desea leer los enunciados de cada ejercicio los podrás encontrar pinchando [aqui](https://ull-esit-inf-dsi-2021.github.io/prct03-types-functions/).
 
 ### ELABORACIÓN DE LOS EJERCICIOS
 
