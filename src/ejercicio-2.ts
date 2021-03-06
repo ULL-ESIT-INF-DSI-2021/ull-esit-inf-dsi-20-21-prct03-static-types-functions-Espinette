@@ -48,3 +48,11 @@ const factorizacion = decimalToFactorial(numero);
 const decimal: number = factorialToDecimal(cadena);
 console.log(`Numero en notacion factorial ${cadena}. Sol = ${decimal}`);
 console.log(`Numero en notacion decimal ${numero}. Sol = ${factorizacion}`);
+
+const numero1: number = 463;
+const cadena1: string = '341010';
+const factorizacion1 = decimalToFactorial(numero1);
+const decimal1: number = factorialToDecimal(cadena1);
+console.log(`Numero en notacion factorial ${cadena1}. Sol = ${decimal1}`);
+console.log(`Numero en notacion decimal ${numero1}. Sol = ${factorizacion1}`);
+

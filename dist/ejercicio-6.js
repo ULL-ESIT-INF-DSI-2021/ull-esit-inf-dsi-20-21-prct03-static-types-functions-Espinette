@@ -15,9 +15,7 @@ function isValidISBN(cadena) {
     if (sum % 11 == 0) {
         return true;
     }
-    else {
-        return false;
-    }
+    return false;
 }
 const isbnwithX = `359821507X`;
 const solisbnwithX = isValidISBN(isbnwithX);
@@ -25,6 +23,6 @@ console.log(`ISBN ${isbnwithX} valido?: ${solisbnwithX}`);
 const isbn = `3-598-21508-8`;
 const solisbn = isValidISBN(isbn);
 console.log(`ISBN ${isbn} valido?: ${solisbn}`);
-const isbnerror = `3-598-22508-8`;
+const isbnerror = `3-598-21508-9`;
 const solisbnerror = isValidISBN(isbnerror);
 console.log(`ISBN ${isbnerror} valido?: ${solisbnerror}`);

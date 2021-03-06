@@ -30,7 +30,8 @@ function fromCamelToSnakeCase(cadena) {
 }
 const SnakeToCame = `the_stealth_warrior`;
 const SolSnakeToCame = fromSnakeToCamelCase(SnakeToCame);
-console.log(`${SolSnakeToCame}`);
+console.log(`Cadena ${SnakeToCame} en Snake sería en Camel: ${SolSnakeToCame}`);
+console.log();
 const CamelToSnake = `theStealthWarrior`;
 const SolCamelToSnake = fromCamelToSnakeCase(CamelToSnake);
-console.log(`${SolCamelToSnake}`);
+console.log(`Cadena ${CamelToSnake} en Camel sería en Snake: ${SolCamelToSnake}`);

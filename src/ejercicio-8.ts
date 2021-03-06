@@ -14,8 +14,23 @@ function ipsInRange(ip1: string, ip2: string) {
   return contadorIp;
 }
 
-const ip1: string = "10.0.0.10";
-const ip2: string = "10.0.1.0";
+const ip1: string = "10.0.0.0";
+const ip2: string = "10.0.0.50";
 const solRangeIp = ipsInRange(ip1, ip2);
 console.log(`Rango  ${ip1} y ${ip2} : ${solRangeIp}`);
+
+const ip1a: string = "10.0.0.0";
+const ip2a: string = "10.0.1.0";
+const solRangeIpa = ipsInRange(ip1a, ip2a);
+console.log(`Rango  ${ip1a} y ${ip2a} : ${solRangeIpa}`);
+
+const ip1b: string = "10.0.0.10";
+const ip2b: string = "10.0.1.0";
+const solRangeIpb = ipsInRange(ip1b, ip2b);
+console.log(`Rango  ${ip1b} y ${ip2b} : ${solRangeIpb}`);
+
+const ip1c: string = "10.0.0.10";
+const ip2c: string = "10.0.2.30";
+const solRangeIpc = ipsInRange(ip1c, ip2c);
+console.log(`Rango  ${ip1c} y ${ip2c} : ${solRangeIpc}`);
 

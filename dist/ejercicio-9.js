@@ -48,5 +48,7 @@ function dañoPokemon(tipoPok1, tipoPok2, capAtaq1, capAtaq2) {
     daño = 50 * (capAtaq1 / capAtaq2) * efectividad;
     return daño;
 }
-console.log(`${dañoPokemon("fuego", "hierba", 1000, 200)}`);
-console.log(`${dañoPokemon("agua", "electrico", 320, 640)}`);
+console.log(`Daño pokemon fuego(ataque 1000) vs hierba(defensa 200):
+${dañoPokemon("fuego", "hierba", 1000, 200)}`);
+console.log(`Daño pokemon agua(ataque 320) vs electrico(defensa 640):
+${dañoPokemon("agua", "electrico", 320, 640)}`);
