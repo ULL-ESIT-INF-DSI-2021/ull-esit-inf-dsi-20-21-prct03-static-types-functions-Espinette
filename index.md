@@ -257,3 +257,7 @@ La funcion `isValidUsername` recibirá un nombre de usuario, lo que hemos hecho 
 ***Salida del programa***
 
  ![Ejercicio10Salida](Imagenes/Ejercicio10Salida.JPG) 
+ 
+ ### Conclusiones
+ 
+Como conclusion de esta práctica podemos decir que hemos creado nuestra primera estructura de proyecto y hemos empezado a desarrollar código en TypeScript aprendiendo del uso de los distintos tipos estáticos y de funciones que pueden darse. Además del uso de las expresiones regulares que facilitan y mucho el trabajo a la hora de simplificar un ejercicio. Hablando sobre los ejercicios podemos decir que en cada uno de ellos aprendes algo nuevo siendo muy interesante para el alumnado, bajo mi punto de vista el que más dificultad me ha llevado ha sido el ejercicio 7. Pues hay un montón de posibilidades de cometer un error. La siguiente práctica será muy similar a esta, pero además tendremos que generar la documentación y usar la metodología TDS.
