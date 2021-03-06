@@ -11,7 +11,7 @@ Esta práctica tiene como función principal empezar a realizar ejercicios de pr
 
 ### Ejercicio-1. Años bisiestos
 
-*Código resuelto* = [Solución](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct03-static-types-functions-Espinette/blob/master/src/ejercicio-1.ts)
+***Código resuelto*** = [Solución](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct03-static-types-functions-Espinette/blob/master/src/ejercicio-1.ts)
 
 ***Resumen enunciado*** 
 
@@ -29,7 +29,7 @@ Para lograr el objetivo de la funcion, que recibe como parametro el año a anali
 
 ### Ejercicio-2. Notación decimal y factorial
 
-*Código resuelto* = [Solución](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct03-static-types-functions-Espinette/blob/master/src/ejercicio-2.ts)
+***Código resuelto*** = [Solución](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct03-static-types-functions-Espinette/blob/master/src/ejercicio-2.ts)
 
 ***Resumen enunciado*** 
 
@@ -42,9 +42,25 @@ El número 463 codificado en notación factorial sería 341010 ya que:
 
  ![Ejercicio2Funcion](Imagenes/Ejercicio2.JPG) 
 
+Para llevar a cabo ambas funciones primero realizamos una funcion `factorial` que recibirá como parámetro un número y retornará la solución del factorial del mismo número. Está funcion la usaremos en repetidas ocasiones en ambas funciones.
+
+En la función `decimalToFactorial` se le pasa un número entero para factorizarla. Lo que haremos paso a paso será lo siguiente:
+
+  1. Inicializamos un numero n a 0 
+  2. Bucle while en el que tiene como condición que el factorial de n sea menor que el número que recibe y por cada iteración se incrementará n en una unidad para hallar el valor máximo que obtendrá el numeró al factorizarlo.
+  3. Bucle for que vaya desde n hasta 0, en el que por cada iteración se calculará el numero de veces por el que se factoriza dicho número dividiendo el numero entre el factorial, el valor actual del nuevo número a partir del resto de la divison, y con la parte entera del resultado de la división lo convertiremos en cadena y se lo agregamos a la cadena final
+  4. Return de la cadena final.
+
+En la función `factorialToDecimal` se le pasa una cadena de texto en notacaión factorial para obtener el número que pertenece. Lo que haremos paso a paso será lo siguiente:
+
+  1. Inicializamos un valor aux al (tamaño de la cadena -1) ya que será la base máxima del decimal a obtener
+  2. Bucle for desde la primera posición de la cadena hasta la última posición de este. En el que obtenemos el dígito a analizar, lo pasamos de string a number a traves de la función `parseInt` luego obtenemos el resultado del número por el factorial de aux, y lo sumamos al valor final, y decrementamos el valor de aux.
+  3. Return del resultado final
+
+
 ### Ejercicio-3. Validador de mensajes
 
-*Código resuelto* = [Solución](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct03-static-types-functions-Espinette/blob/master/src/ejercicio-3.ts)
+***Código resuelto*** = [Solución](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct03-static-types-functions-Espinette/blob/master/src/ejercicio-3.ts)
 
 ***Resumen enunciado*** 
 
@@ -56,9 +72,11 @@ Crear una funcion isValid que recibira una cadena formada por numeors y letras y
 
  ![Ejercicio3Funcion](Imagenes/Ejercicio3.JPG) 
 
+El objetivo de esta función es comprobar si un mensaje es válido. Para ello creamos un bucle for que recorre la cadena entera, primero comprueba si la posicion en la que se encuentra es un número si no es así retorna falso. Luego avanzamos en la cadena hasta la primera letra y lo que hacemos es un bucle for dentro del anterior que vaya desde 0 hasta el número encontrado, que lo que hace es ir posición a posición para comprobar que haya tanta letras como el numero que indicaba previamente. Si todo esto se cumple retorna true, en caso de no ser así retorna false, al ser un mensaje no válido.
+
 ### Ejercicio-4. Conversor de estilo
 
-*Código resuelto* = [Solución](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct03-static-types-functions-Espinette/blob/master/src/ejercicio-4.ts)
+***Código resuelto*** = [Solución](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct03-static-types-functions-Espinette/blob/master/src/ejercicio-4.ts)
 
 ***Resumen enunciado*** 
 
@@ -73,7 +91,7 @@ Desarrollar dos funciones `fromSnakeToCamelCase` y `fromCamelToSnakeCase` cuyo o
 
 ### Ejercicio-5. Un solo golpe
 
-*Código resuelto* = [Solución](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct03-static-types-functions-Espinette/blob/master/src/ejercicio-5.ts)
+***Código resuelto*** = [Solución](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct03-static-types-functions-Espinette/blob/master/src/ejercicio-5.ts)
 
 ***Resumen enunciado*** 
 
@@ -91,7 +109,7 @@ Crear una función que combine 4 métodos en una línea. Esta recibira una caden
 
 ### Ejercicio-6. Conversor ISBN
 
-*Código resuelto* = [Solución](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct03-static-types-functions-Espinette/blob/master/src/ejercicio-6.ts)
+***Código resuelto*** = [Solución](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct03-static-types-functions-Espinette/blob/master/src/ejercicio-6.ts)
 
 ***Resumen enunciado*** 
 
@@ -110,7 +128,7 @@ La funcion retornará true o false en funcion de si es válido o no. Dos ejemplo
 
 ### Ejercicio-7. El siguiente número
 
-*Código resuelto* = [Solución](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct03-static-types-functions-Espinette/blob/master/src/ejercicio-7.ts)
+***Código resuelto*** = [Solución](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct03-static-types-functions-Espinette/blob/master/src/ejercicio-7.ts)
 
 ***Resumen enunciado*** 
 
@@ -129,7 +147,7 @@ Crear una funcion que reciba un número entero y deberá devolver el siguiente n
 
 ### Ejercicio-8. Contando IPs
 
-*Código resuelto* = [Solución](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct03-static-types-functions-Espinette/blob/master/src/ejercicio-8.ts)
+***Código resuelto*** = [Solución](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct03-static-types-functions-Espinette/blob/master/src/ejercicio-8.ts)
 
 ***Resumen enunciado*** 
 
@@ -145,7 +163,7 @@ Crear una función que reciba como parámetro una cadena de texto que representa
 
 ### Ejercicio-9. Entrenador Pokemon
 
-*Código resuelto* = [Solución](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct03-static-types-functions-Espinette/blob/master/src/ejercicio-9.ts)
+***Código resuelto*** = [Solución](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct03-static-types-functions-Espinette/blob/master/src/ejercicio-9.ts)
 
 ***Resumen enunciado*** 
 
@@ -170,7 +188,7 @@ Aquellos que son del mismo tipo tendrán efectividad 0.5
 
 ### Ejercicio-10. Validador de nombre usuario
 
-*Código resuelto* = [Solución](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct03-static-types-functions-Espinette/blob/master/src/ejercicio-10.ts)
+***Código resuelto*** = [Solución](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct03-static-types-functions-Espinette/blob/master/src/ejercicio-10.ts)
 
 ***Resumen enunciado*** 
 
